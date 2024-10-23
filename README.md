@@ -1,53 +1,42 @@
-# Template for Hackathon
-이 레파지토리는 참여자들이 해커톤 결과물을 위한 레파지토리 생성시에 참고할 내용들을 담고 있습니다.
-1. 레파지토리 생성
-2. 레파지토리 구성
-3. README.md 가이드라인
-4. README.md 작성팁
-<br/>
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/T3QcP9pQ)
 
 
-## 1. 레파지토리 생성
-- [https://classroom.github.com/a/T3QcP9pQ](https://classroom.github.com/a/T3QcP9pQ)
-- 위 Github Classroom 링크에 접속해 본인 조의 github 레파지토리를 생성하세요.
-  <img src="https://github.com/user-attachments/assets/aab768c0-7f1a-4919-99c1-5ead50c3c61d" width="600px" alt="classroom에서 팀 생성 그림" />
-- 레파지토리 생성 시 팀 이름은 `{조번호}` 형식으로 생성하세요.
-- 예를 들어, 3조의 팀명은 `03` 입니다.
-- 이 경우 `Group-03`이라는 이름으로 레포지토리가 생성됩니다.
-- 팀원의 경우 생성되어 있는 팀에 참가해주세요. <br/>
-  팀에 참가하지 않았을 경우, 레포지토리에 대한 권한이 없어 PR 및 commit이 막힐 수 있습니다.
-  <img width="600" alt="classroom에서 팀 참여 그림" src="https://github.com/user-attachments/assets/86f084f0-8623-40ed-b6d5-4e307ee8478b">
-<br/>
-
-
-## 2. 레파지토리 구성
-- 레파지토리 내에 `README.md` 파일 생성하고 아래의 가이드라인과 작성팁을 참고하여 파일을 작성하세요.
-- 레파지토리 내에 `docs` 폴더를 생성하고 폴더 내에는 과제 수행 하면서 작성한 각종 보고서, 발표자료를 올려둡니다.
-- 그 밖에 레파지토리의 폴더 구성은 과제 결과물에 따라 자유롭게 구성하되 가급적 코드의 목적이나 기능에 따라 폴더를 나누어 구성하세요.  
-<br/>
-
-
-## 3. README.md 가이드라인
+## README.md 가이드라인
 - README 파일 작성시에 아래의 5가지 항목의 내용은 필수적으로 포함해야 합니다.
 - 아래의 7가지 항목이외에 프로젝트의 이해를 돕기위한 내용을 추가해도 됩니다.
 - `SAMPLE_README.md`가 단순한 형태의 예제이니 참고하세요.
-```markdown
 ### 1. 프로젝트 소개
 #### 1.1. 개발배경 및 필요성
-> 프로젝트를 실행하게 된 배경 및 필요성을 작성하세요.
+AID(정보컴퓨터공학부 AI동아리) 내에서 자체적으로 진행한 대회에서 좋은 모델을 만드는 것에 그치지 않고 이를 직접 배포해보는 프로젝트를 진행하고자 해당 프로젝트가 시작되었습니다.
 
 #### 1.2. 개발 목표 및 주요 내용
-> 프로젝트의 목표 및 주요 내용을 작성하세요.
+음식점의 후기를 자연어로 입력받으면 해당 후기를 남긴 유저의 별점을 예측하는 프로그램을 배포하는 일련의 과정을 스터디하고 경험하는 것을 목표로 하고 있습니다.
 
 #### 1.3. 세부내용
-> 위 내용을 작성하세요.
+- 프론트엔드: Next.JS를 활용한 프롬프트 시스템
+- 백엔드: Django + Pytorch로 AI 모델 API화, Django ORM <-> PostgreSQL
+- AI: AI모델 튜닝 및 인스턴스화
+  - 제한사항: AI 모델을 위해 메모리, CPU 등의 하드웨어 성능이 뒷받침 되어야 할 것으로 보임. -> AWS 스펙 조절 및 프롬프트 호출 횟수 제한
 
-#### 1.4. 기존 서비스 대비 차별성
-> 위 내용을 작성하세요.
+#### 1.4. 주차 별 계획 및 진행사항
 
-#### 1.5. 사회적가치 도입 계획
-> 위 내용을 작성하세요.
+- **F**: Front-End
+- **B**: Back-End
+- **A**: AI & Pytorch
 
+| 주차 | 키워드 | 계획 | 진행 내역 |
+|:-------:|:-------:|:-------:|:-------:|
+| 1주차 | React | Web 기초 스터디 **F** <br> React 스터디 **F** | 1. [HTML, CSS, JS](./documents/week1/Web%20Basic.md) <br> 2. [React](https://www.notion.so/React-5d06778aa9b541d8ba95270fd4db5591) |
+| 2주차 | HTTP, Figma | HTTP 기반 API 스터디 **F,B,A** <br> Figma로 Wireframe 설계 **F** | 1. [HTTP 기반 API](https://www.notion.so/HTTP-API-64249f434f934fb3a7da7c9062b9fad3) <br> 2. [Figma Wireframe](./documents/week2/Figma%20Wireframe.md) |
+| 3주차 | Django, REST API | Django 기초 스터디 **B,A** <br> Django REST Framework 스터디 **B,A** | 1. [Django](https://github.com/2024-PNU-SW-StudyGroup/Group-11/tree/main/documents/week3/django) <br> 2-1. [Django ↔ React](https://github.com/2024-PNU-SW-StudyGroup/Group-11/tree/main/documents/week3/Django-react)<br> 2-2. [Django REST API](https://github.com/2024-PNU-SW-StudyGroup/Group-11/tree/main/documents/week3/DjangoRestFramework) <br> **문서 정리 필요** |
+| 4주차 | Next.js, REST API | Next.js로 UI 구축 -1- **F** <br> DB (SQLite) 스터디 **B** | - |
+| 5주차 | Pytorch <br> Next.js <br> Django, REST API | Pytorch 모델 가공 -1- **A** <br> Next.js로 UI 구축 -2- **F** <br> API 명세서 작성 및 DB 구축 **B,A** | 1. [Pytorch Basic](./documents/week4/Pytorch%20Basic.md) |
+| 6주차 | Pytorch <br> Next.js <br> Django, REST API | Pytorch 모델 가공 -2- **A** <br> Next.js로 UX 구축 -1- **F** <br> REST API 구현 -1- **B** | - |
+| 7주차 | Pytorch <br> Next.js <br> Django, REST API | Pytorch 모델 API Serving **A** <br> Next.js로 UX 구축 -2- **F** <br> REST API 구현 -2- **B** | - |
+| 8주차 | Pytorch <br> Next.js <br> Django, REST API | 통합 테스트 및 디버깅 -1- **F,B,A** | - |
+| 9주차 | Pytorch <br> Next.js <br> Django, REST API | 통합 테스트 및 디버깅 -2- **F,B,A** | - |
+| 10주차 | Docker | Docker로 인프라 구축하기 **B** | - |
+| 11주차 | AWS | 서비스 배포 **B** | - |
 
 ### 2. 상세설계
 #### 2.1. 시스템 구성도
@@ -55,6 +44,10 @@
 
 #### 2.1. 사용 기술
 > 스택 별(backend, frontend, designer등) 사용한 기술 및 버전을 작성하세요.
+> 
+> Frontend:
+> 
+> Backend: Django==5.1, djangorestframework==3.15.2, sqlparse==0.5.1
 > 
 > ex) React.Js - React14, Node.js - v20.0.2
 
@@ -98,151 +91,12 @@
 
 ### 6. 팀 소개
 > 팀원 소개 & 구성원 별 역할 분담 & 간단한 연락처를 작성하세요.
+#### 🍱 배고픈사람들
+| 이동훈 | 조현성 | 안소희 | 박준혁 | 박상훈 |곽도연 |
+|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+|<img width="100px" alt="이동훈" src="https://avatars.githubusercontent.com/u/67902252?s=60&v=4/f5b5df2a-e174-437d-86b2-a5a23d9ee75d" /> | <img width="100px" alt="조현성" src="https://avatars.githubusercontent.com/u/138447029?v=4" /> | <img width="100px" alt="안소희" src="https://avatars.githubusercontent.com/u/127065983?s=60&v=4" /> |<img width="100px" alt="박준혁" src="https://avatars.githubusercontent.com/u/162955476?s=60&v=4" /> | <img width="100px" alt="박상훈" src="https://avatars.githubusercontent.com/u/152972679?s=60&v=4" />| <img width="100px" alt="곽도연" src="https://avatars.githubusercontent.com/u/165464282?s=60&v=4" /> |
+| therqq13@pusan.ac.kr | sungsam3312@pusan.ac.kr | soheean1370@pusan.ac.kr | eppi001004@gmail.com | sanghoon556@pusan.ac.kr |gdy0210@pusan.ac.kr |
+| 총괄 <br/> 인프라 구축 | Pytorch 개발 | Pytorch 개발 | 백엔드 개발 | 백엔드 개발 | 프론트엔드 개발 |
 
 ### 7. 해커톤 참여 후기
 > 팀원 별 해커톤 참여 후기를 작성하세요.
-```
-<br/>
-
-
-## 4. README.md 작성 팁
-- 마크다운 언어를 이용해 README.md 파일을 작성할 때 참고할 수 있는 마크다운 언어 문법을 공유합니다.
-- 다양한 예제와 보다 자세한 문법은 [이 문서](https://www.markdownguide.org/basic-syntax/)를 참고하세요.
-
-### 4.1. 헤더 Header
-```
-# This is a Header 1
-## This is a Header 2
-### This is a Header 3
-#### This is a Header 4
-##### This is a Header 5
-###### This is a Header 6
-####### This is a Header 7 은 지원되지 않습니다.
-```
-
-# This is a Header 1
-## This is a Header 2
-### This is a Header 3
-#### This is a Header 4
-##### This is a Header 5
-###### This is a Header 6
-####### This is a Header 7 은 지원되지 않습니다.
-<br />
-
-### 4.2. 인용문 BlockQuote
-```
-> This is a first blockqute.
->	> This is a second blockqute.
->	>	> This is a third blockqute.
-```
-> This is a first blockqute.
->	> This is a second blockqute.
->	>	> This is a third blockqute.
-<br />
-
-### 4.3. 목록 List
-* **Ordered List**
-```
-1. first
-2. second
-3. third  
-```
-1. first
-2. second
-3. third
-<br />
-
-* **Unordered List**
-```
-* 하나
-  * 둘
-
-+ 하나
-  + 둘
-
-- 하나
-  - 둘
-```
-* 하나
-  * 둘
-
-+ 하나
-  + 둘
-
-- 하나
-  - 둘
-<br />
-
-### 4.4. 코드 CodeBlock
-* 코드 블럭 이용 '``'
-```
-여러줄 주석 "```" 이용
-"```
-#include <stdio.h>
-int main(void){
-  printf("Hello world!");
-  return 0;
-}
-```"
-
-단어 주석 "`" 이용
-"`Hello world`"
-
-* 큰 따움표(") 없이 사용하세요.
-``` 
-<br />
-
-### 4.5. 링크 Link
-```
-[Title](link)
-[부산대 소프트웨어융합교육원](https://swedu.pusan.ac.kr/swedu/index.do)
-
-<link>
-<https://swedu.pusan.ac.kr>
-``` 
-[부산대 소프트웨어융합교육원](https://swedu.pusan.ac.kr)
-
-<https://swedu.pusan.ac.kr>  
-<br />
-
-### 4.6. 강조 Highlighting
-```
-*single asterisks*
-_single underscores_
-**double asterisks**
-__double underscores__
-~~cancelline~~
-```
-*single asterisks* <br />
-_single underscores_ <br />
-**double asterisks** <br />
-__double underscores__ <br />
-~~cancelline~~  <br />
-<br />
-
-### 4.7. 이미지 Image
-```
-<img src="/path/to/img.jpg" width="600px" title="Title" alt="Alt text"></img>
-![Alt text](/path/to/img.jpg "Optional title")
-```
-<img src="https://github.com/pnuswedu/SW-Hackathon-2024/assets/34933690/be7beb64-490f-4480-b121-f25cde7f2a8d" width="600px" title="부산대학교 소프트웨어융합교육원" alt="부산대학교 소프트웨어융합교육원"></img>
-<br/>
-![부산대학교 소프트웨어융합교육원](https://github.com/pnuswedu/SW-Hackathon-2024/assets/34933690/884154bb-28f6-4498-9f64-a8a878972951, "부산대학교 소프트웨어융합교육원")
-<br/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
